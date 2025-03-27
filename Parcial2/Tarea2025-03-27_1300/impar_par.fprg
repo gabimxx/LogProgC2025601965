@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="impar_par"/>
+        <attribute name="authors" value="usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-27 12:04:43 a. m."/>
+        <attribute name="created" value="dXN1YXJpbztERVNLVE9QLUxGSjI5OU47MjAyNS0wMy0yNzsxMjowMjo1NSBhLiBtLjszMjc0"/>
+        <attribute name="edited" value="dXN1YXJpbztERVNLVE9QLUxGSjI5OU47MjAyNS0wMy0yNzsxMjowNDo0MyBhLiBtLjsxOzMzODE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <assign variable="N" expression="0"/>
+            <input variable="N"/>
+            <if expression="N%2==0">
+                <then>
+                    <output expression="&quot;PAR&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;IMPAR&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

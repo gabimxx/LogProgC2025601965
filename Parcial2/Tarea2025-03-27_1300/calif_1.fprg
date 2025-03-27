@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="calif_1"/>
+        <attribute name="authors" value="usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 11:56:37 p. m."/>
+        <attribute name="created" value="dXN1YXJpbztERVNLVE9QLUxGSjI5OU47MjAyNS0wMy0yNjsxMTo0ODo0NCBwLiBtLjszMjk1"/>
+        <attribute name="edited" value="dXN1YXJpbztERVNLVE9QLUxGSjI5OU47MjAyNS0wMy0yNjsxMTo1NjozNyBwLiBtLjsxOzM0MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="calif" type="Integer" array="False" size=""/>
+            <assign variable="calif" expression="0"/>
+            <input variable="calif"/>
+            <if expression="calif &lt; 6">
+                <then>
+                    <output expression="&quot;Reprobado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Aprobado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

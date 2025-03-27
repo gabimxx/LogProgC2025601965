@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="donas"/>
+        <attribute name="authors" value="usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-27 01:21:19 a. m."/>
+        <attribute name="created" value="dXN1YXJpbztERVNLVE9QLUxGSjI5OU47MjAyNS0wMy0yNzswMTowOTowOSBhLiBtLjszMjc4"/>
+        <attribute name="edited" value="dXN1YXJpbztERVNLVE9QLUxGSjI5OU47MjAyNS0wMy0yNzswMTowOToxMyBhLiBtLjsxO3VzdWFyaW87REVTS1RPUC1MRkoyOTlOOzIwMjUtMDMtMjc7MTI6MDg6MjMgYS4gbS47cHJ1ZWJhLmZwcmc7Nzg5MA=="/>
+        <attribute name="edited" value="dXN1YXJpbztERVNLVE9QLUxGSjI5OU47MjAyNS0wMy0yNzswMToyMToxOSBhLiBtLjsxOzMzODE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <declare name="Donas" type="Integer" array="False" size=""/>
+            <declare name="Total" type="Integer" array="False" size=""/>
+            <declare name="descuento" type="Integer" array="False" size=""/>
+            <assign variable="Donas" expression="10"/>
+            <input variable="N"/>
+            <if expression="N&gt;=50">
+                <then>
+                    <assign variable="descuento" expression="2"/>
+                    <assign variable="Total" expression="N * (Donas - descuento)"/>
+                </then>
+                <else>
+                    <if expression="N&gt;=30">
+                        <then>
+                            <assign variable="descuento" expression="1"/>
+                            <assign variable="Total" expression="N * (Donas - descuento)"/>
+                        </then>
+                        <else>
+                            <if expression="N&lt;30">
+                                <then>
+                                    <assign variable="descuento" expression="0"/>
+                                    <assign variable="Total" expression="N * (Donas - descuento)"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
