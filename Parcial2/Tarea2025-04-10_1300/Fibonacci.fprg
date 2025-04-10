@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fibonacci"/>
+        <attribute name="authors" value="usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 01:08:30 a. m."/>
+        <attribute name="created" value="dXN1YXJpbztERVNLVE9QLUxGSjI5OU47MjAyNS0wNC0xMDswMTowMzowMiBhLiBtLjszMjU4"/>
+        <attribute name="edited" value="dXN1YXJpbztERVNLVE9QLUxGSjI5OU47MjAyNS0wNC0xMDswMTowODozMCBhLiBtLjsxOzMzNzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, b, temp, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingresa el numero: &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="a" expression="1"/>
+            <assign variable="b" expression="2"/>
+            <assign variable="i" expression="2"/>
+            <output expression="a" newline="True"/>
+            <output expression="b" newline="True"/>
+            <while expression="i &lt; n">
+                <assign variable="temp" expression="a + b"/>
+                <output expression="temp" newline="True"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="temp"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

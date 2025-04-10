@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="factorial"/>
+        <attribute name="authors" value="usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 01:02:41 a. m."/>
+        <attribute name="created" value="dXN1YXJpbztERVNLVE9QLUxGSjI5OU47MjAyNS0wNC0wOTsxMjowNDo1MCBhLiBtLjszMjcy"/>
+        <attribute name="edited" value="dXN1YXJpbztERVNLVE9QLUxGSjI5OU47MjAyNS0wNC0xMDswMTowMjo0MSBhLiBtLjszOzMzNzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="factorial, n, i" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="factorial" expression="1"/>
+            <output expression="&quot;Ingrese un numero entero: &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n&lt;0">
+                <then>
+                    <output expression="&quot;No se permiten numeros negativos&quot;" newline="True"/>
+                </then>
+                <else>
+                    <while expression="i&lt;=n">
+                        <assign variable="factorial" expression="factorial * i"/>
+                        <assign variable="i" expression="i +1"/>
+                    </while>
+                </else>
+            </if>
+            <output expression="&quot;El factorial del entero es: &quot;&amp; factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
